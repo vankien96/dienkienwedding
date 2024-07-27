@@ -61,7 +61,7 @@ const SeedDB = {
         mother: ""
       },
       location: {
-        text: "Hội trường thôn 6 - xã Triệu Lăng - huyện Triệu Phong - tỉnh Quảng Trị",
+        text: "Hội trường thôn 6 - Triệu Lăng - Triệu Phong - Quảng Trị",
         map: "https://maps.app.goo.gl/Qd57ACq1TYsCXCNr7"
       },
       time_start: {
