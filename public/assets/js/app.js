@@ -23,16 +23,3 @@ function colorLog(message, color) {
     console.log("%c" + message, "color:" + color);
 }
 
-(function() {
-
-    let sig = `     __                        
-    (_  _     _ __  |  _     _  _ __ 
-    __)(_||_|(_|| | | (_| o (_ (_)|||`
-
-
-
-    colorLog(sig,'success');
-    colorLog('Github repo: https://github.com/sauanla/wedding-invitation','success'); 
-
-})();
-

@@ -80,7 +80,7 @@ class InviationComponent extends BaseCore {
 
         }
 
-        await this._inviteeEntity.remove(id);
+        await this._inviteeEntity.deleteOne(id);
         return true;
     }
 

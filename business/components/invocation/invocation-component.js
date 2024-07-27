@@ -78,7 +78,7 @@ class InvocationComponent extends BaseCore {
             }  
         }
 
-        await this._invocationEntity.remove(id);
+        await this._invocationEntity.deleteOne(id);
         return true;
     }
 

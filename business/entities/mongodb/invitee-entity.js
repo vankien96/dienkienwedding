@@ -25,7 +25,7 @@ class AccountEntity extends BaseEntityMongoDb {
     }
 
     remove(id) {
-        return this._model.remove({ _id: id });
+        return this._model.deleteOne({ _id: id });
     }
 
     update(id, fieldObj) {

@@ -9,10 +9,7 @@ const log = sysConfig.log();
 mongoose.Promise = global.Promise;
 
 // Connecting to the database
-mongoose.connect(sysConfig.uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => {
+mongoose.connect(sysConfig.uri, {}).then(() => {
     log.info('Successfully connected to the mongodb database');
 }).catch(err => {
     log.info('Could not connect to the database. Exiting now...', err);
