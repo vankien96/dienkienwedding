@@ -3,7 +3,7 @@ const SeedDB = {
   user: {
     email: "admin@invitation.com",
     username: "admin",
-    password: "$2a$12$BChiWT9RGVwRa2JHdjvFUuLAr6gLxEinghR5R534Mi4vO./JcfoJi", //123qwe
+    password: "$2a$12$BChiWT9RGVwRa2JHdjvFUuLAr6gLxEinghR5R534Mi4vO./JcfoJi", 
     password_confirm: "$2a$12$BChiWT9RGVwRa2JHdjvFUuLAr6gLxEinghR5R534Mi4vO./JcfoJi",
     role: "admin"
   },
@@ -15,7 +15,7 @@ const SeedDB = {
         mother: "Nguyễn Thị Chanh"
       },
       location: {
-        text: "Khu Tái định cư thôn Phước Lộc - xã Lộc Tiến - huyện Phú Lộc - Thừa Thiên Huế",
+        text: "Khu Tái định cư thôn Phước Lộc - Lộc Tiến - Phú Lộc - Thừa Thiên Huế",
         map: "https://maps.app.goo.gl/61aHtiQpCS3Y5uQL8"
       },
       time_start: {
@@ -40,15 +40,13 @@ const SeedDB = {
       finances: [{
         provider_name: "TPBank",
         provider_number: "01853641501",
-        holder_name: "TRUONG VAN KIEN"
+        holder_name: "TRUONG VAN KIEN",
+        qr_code: "/assets/images/qr-code-tp.jpg"
       }, {
         provider_name: "Vietcombank",
         provider_number: "0041000334663",
-        holder_name: "TRUONG VAN KIEN"
-      }, {
-        provider_name: "Momo",
-        provider_number: "0946876983",
-        holder_name: "TRUONG VAN KIEN"
+        holder_name: "TRUONG VAN KIEN",
+        qr_code: "/assets/images/qr-code-vc.jpg"
       }],
       email: "vankien96@gmail.com",
       phone: "0946876983",
@@ -64,7 +62,7 @@ const SeedDB = {
       },
       location: {
         text: "Hội trường thôn 6 - xã Triệu Lăng - huyện Triệu Phong - tỉnh Quảng Trị",
-        map: "https://goo.gl/maps/tRjKuVRNisqxhQaT7"
+        map: "https://maps.app.goo.gl/Qd57ACq1TYsCXCNr7"
       },
       time_start: {
         date: {
@@ -88,7 +86,8 @@ const SeedDB = {
       finances: [{
         provider_name: "Vietinbank",
         provider_number: "105877216713",
-        holder_name: "VO THI DIEN"
+        holder_name: "VO THI DIEN",
+        qr_code: "/assets/images/qr-code-vt.jpg"
       }],
       email: "dienevent@gmail.com",
       phone: "0973599364",

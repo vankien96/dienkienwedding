@@ -16,6 +16,12 @@
     <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/invitation.css" rel="stylesheet" type="text/css" />
     <link href="/plugins/toastr/toastr.css" rel="stylesheet" type="text/css" />
+
+    <script> 
+        function goBack() {
+            window.history.back();
+        } 
+    </script> 
 </head>
 
 <body>
@@ -30,17 +36,6 @@
                                 <div class="pt-3 pb-3"><i class="ti-comments text-primary h3"></i></div>
                                 <h5>If you can't join the wedding party?</h5>
                                 <p class="text-muted">Below are some information about the bank account us.</p>
-                                <a href="mailto:<%= data.cfg.male.email %>">
-                                    <button type="button" class="btn btn-primary m-t-10 mr-1 waves-effect waves-light">
-                                        Email me
-                                    </button>
-                                </a>
-                                <a href="tel:<%= data.cfg.male.phone %>">
-                                    <button type="button" class="btn btn-success m-t-10 waves-effect waves-light">
-                                        Call me
-                                    </button>
-                                </a>
-
                             </div>
                         </div>
                     </div>
@@ -48,7 +43,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-5  pt-3">
                             <h5 class="mt-0 font-18 mb-4"><i class="ti-agenda text-primary mr-2 vni"></i>
-                                Groom’s family (Nhà trai) <%=  data.cfg.male.finances.length %>
+                                Nhà trai
                             </h5>
                             <div class="accordion" id="accordionExample"> 
                                 <% for (var i = 0, len =  data.cfg.male.finances.length ; i < len; i++) {%>
@@ -61,6 +56,7 @@
                                         </a>
                                         <div id="collapse_<%= i %>" class="collapse <%=  i == 0 ? 'show' : '' %>" aria-labelledby="heading_<%= i %>"
                                             data-parent="#accordionExample">
+                                            <img src="<%= data.cfg.male.finances[i].qr_code %>" width="200px">
                                             <div class="card-body copy">
                                                 <p class="text-muted mb-0 faq-ans">
                                                     STK: <b><%= data.cfg.male.finances[i].provider_number %></b>
@@ -87,7 +83,7 @@
                         </div>
                         <div class="col-lg-5 offset-lg-1 pt-3">
                             <h5 class="mt-0 font-18 mb-4"><i class="ti-bookmark-alt text-primary mr-2"></i>
-                                Bride's home (Nhà gái)
+                                Nhà gái
                             </h5>
                             <div class="accordion" id="accordionExample2">
                                 <% for (var i = 0, len =  data.cfg.female.finances.length ; i < len; i++) {%>
@@ -101,6 +97,7 @@
                                         <div id="collapse_<%= i+data.cfg.male.finances.length %>" class="collapse <%=  i == 0 ? 'show' : '' %>" 
                                             aria-labelledby="heading_<%= i+ data.cfg.male.finances.length %>"
                                             data-parent="#accordionExample2">
+                                            <img src="<%= data.cfg.female.finances[i].qr_code %>" width="200px">
                                             <div class="card-body copy">
                                                 <p class="text-muted mb-0 faq-ans">
                                                     STK: <b><%= data.cfg.female.finances[i].provider_number %></b>
@@ -124,14 +121,6 @@
                             </div>
                             <!-- end accordian -->
                         </div>
-                    </div>
-                    <!-- end row -->
-                    <div class="text-center pt-3">
-                        <a href="/invitation">
-                            <button type="button" class="btn btn-success m-t-10 mr-1 waves-effect waves-light">
-                                Back
-                            </button>
-                        </a>
                     </div>
 
                 </div>
