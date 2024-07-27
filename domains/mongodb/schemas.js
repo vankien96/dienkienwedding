@@ -55,6 +55,7 @@ const DATA_CONFIG = new Schema({
                     month: String,
                     year: String
                 },
+                day_of_week: String,
                 solar: {
                     day: String,
                     month: String,
@@ -90,6 +91,7 @@ const DATA_CONFIG = new Schema({
                     month: String,
                     year: String
                 },
+                day_of_week: String,
                 solar: {
                     day: String,
                     month: String,

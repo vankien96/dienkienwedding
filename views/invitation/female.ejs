@@ -5,10 +5,9 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui"/>
-    <title> Kính mời <%= (data.invitee !== null) ? data.invitee.name : "" %>
-    </title>
+    <title> Kính mời <%= (data.invitee !== null) ? data.invitee.name : "" %> </title>
 
-    <meta proeperty="og:url" content="https://sauanla.com/"/>
+    <meta proeperty="og:url" content="https://dienkienwedding.site/"/>
     <meta property="og:site_name" content="Happy wedding"/>
 
     <meta property="og:image" content="<%= data.cfg.female.bg_fb %>?v=<%= +new Date() %>"/>
@@ -18,7 +17,8 @@
     <meta property="fb:admins" content="100004574107394"/>
     <meta property="og:updated_time" content="<%= +new Date() %>"/>
     <meta name="keywords" content='Kính mời <%= (data.invitee !== null) ? data.invitee.name : "" %>'/>
-    <meta name="description" content="Sự hiện diện của quý vị là niềm vinh dự lớn cho gia đình Chúng tôi"/>
+    <meta name="description" content="Sự hiện diện của quý khách là niềm vinh dự lớn cho gia đình Chúng tôi"/>
+    <link rel="shortcut icon" href=""/>
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/metismenu.min.css" rel="stylesheet" type="text/css"/>
@@ -37,10 +37,34 @@
             right: 0px;
             bottom: 0px;
             left: 0px;
-            height: auto;
-            opacity: 0.75;
             background-image: url('<%= data.cfg.female.bg %>');
             background-size: cover;
+        }
+
+        @media (max-width: 768px) {
+            .card-welcome::before {
+                background-position: center;
+            }
+        }
+
+        /* Confetti CSS */
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            opacity: 0;
+            will-change: transform, opacity;
         }
     </style>
 
@@ -50,171 +74,189 @@
 <body>
 
 <div id="wrapper">
+    <div class="confetti" style="z-index: -100;"></div>
     <div id="container">
-        <section class="open-book">
-            <div class="card-welcome-main">
-                <div class="card-welcome">
-                    <img class="bg-top-right" src="/assets/images/right-top.png"/>
-                    <img class="bg-bottom-left" src="/assets/images/right-top.png"/>
 
-
-                    <div class="share-buttons">
-                        <a style="padding-top: 5px" href="<%= data.cfg.female.location.map %>" target="_blank">
+        <section>
+            <div class="two-column-container">
+                <div class="column">
+                    <div class="cover-column" style="z-index: 100;"></div>
+                    <div class="card-welcome">
+                        <div class="share-buttons" style="padding-left: 8px;">
+                            <a style="padding-top: 5px"
+                               href="<%= data.cfg.female.location.map %>"
+                               target="_blank">
+                                <div class="share-button">
+                                    <div class="share-button-secondary">
+                                        <div class="share-button-secondary-content">
+                                            Bản đồ
+                                        </div>
+                                    </div>
+                                    <div class="share-button-primary">
+                                        <i class="share-button-icon ti-map"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a style="padding-top: 8px"
+                               href="/bank"
+                            %>
+                            '
+                            target="_blank">
                             <div class="share-button">
                                 <div class="share-button-secondary">
                                     <div class="share-button-secondary-content">
-                                        Open map
+                                        Mừng cưới
                                     </div>
                                 </div>
                                 <div class="share-button-primary">
-                                    <i class="share-button-icon ti-map"></i>
+                                    <i class="share-button-icon ti-money"></i>
                                 </div>
                             </div>
-                        </a>
-                        <a style="padding-top: 8px" href="/bank"
-                        %>
-                        '
-                        target="_blank">
-                        <div class="share-button">
-                            <div class="share-button-secondary">
-                                <div class="share-button-secondary-content">
-                                    Bank Information
+                            </a>
+                        </div>
+
+                        <div class="wrap-card-welcome">
+
+                            <div class="card-welcome-header">
+                                <div style="color: white; padding-bottom: 0px; font-family: sf-regular;">
+                                    SAVE THE DATE
                                 </div>
+                                <div style="display: flex; align-items: center;">
+                                    <div class="card-welcome-text vni" style="font-size: 60px;">K</div>
+                                    <div class="card-welcome-text vni" style="font-size: 20px; margin-left: 30px; margin-right: 30px;">🤍</div>
+                                    <div class="card-welcome-text vni" style="font-size: 60px;">D</div>
+                                </div>
+                                
+                                <div class="card-welcome-text vni" style="font-size: 22px;">
+                                    Văn Kiên - Mỹ Diện
+                                </div>
+                                <div style="color: white; font-family: sf-regular;">
+                                    <%= data.cfg.female.time_start.date.solar.day %>
+                                    -
+                                    <%= data.cfg.female.time_start.date.solar.month %>
+                                    -
+                                    <%= data.cfg.female.time_start.date.solar.year %>
+                                </div>
+    
                             </div>
-                            <div class="share-button-primary">
-                                <i class="share-button-icon ti-money"></i>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-
-                    <div class="wrap-card-welcome">
-
-                        <div class="card-welcome-header">
-                            <div class="card-welcome-text vni">
-                                Wedding
-                            </div>
-                            <div class="card-welcome-date">
-                                <%= data.cfg.female.time_start.date.lunar.day %>
-                                -
-                                <%= data.cfg.female.time_start.date.lunar.month %>
-                                -
-                                <%= data.cfg.female.time_start.date.lunar.year %>
-                            </div>
-
-                        </div>
-
-                        <div class="card-welcome-invite-name vni">
-                            <%= (data.mode == 2 ? "Kính mời: " +
-                                    data.invitee.name : "Kính mời ....................") %>
                         </div>
                     </div>
-
                 </div>
-                <div class="card-invite">
-                    <img class="bg-top-right" src="/assets/images/right-top.png"/>
-                    <img class="bg-bottom-left" src="/assets/images/right-top.png"/>
-
-                    <% if(data.invitee && data.invitee._id){ %>
-                        <a class="btn btn-primary btn-bottom-right" class="btn btn-success"
-                           href='/invocation/<%= data.invitee._id %>' target="_blank">Trả lời </a>
-                    <% } %>
-
-                    <div class="card-wrap">
-
-                        <div class="card-header-invite">
-                            <div class="card-header-text">
-                                Trân trọng kính mời
-                            </div>
-                            <div class="card-header-inviter name vni">
-                                <%= (data.mode == 2 ? data.invitee.name : "Bạn và gia đình") %>
-                            </div>
-                            <div class="card-header-inviter">
-                                Tới dự lễ thành hôn của 2 <%= (data.mode == 2 ? data.invitee.level : "...."
-                                ) %>
-                                chúng tôi
-                            </div>
-                        </div>
-                        <div class="card-header-name">
-                            <div class="male-name vni">
-                                <%= data.cfg.male.name %>
-                            </div>
-                            <span style="line-height: 15px;"> &</span>
-                            <div class="female-name vni">
-                                <%= data.cfg.female.name %>
-                            </div>
-                        </div>
-                        <div class="card-information">
-                                            <span style="padding-top: 10px">Hôn lễ được tổ chức vào hồi <%=
-                                                data.cfg.female.time_start.time.hour %> giờ
-                                                    <%= data.cfg.female.time_start.time.minute %>"</span>
-                            <div class="information-time">
-                                                <span class="week vni">Thứ <%=
-                                                    data.cfg.female.time_start.date.day_of_week %></span>
-                                <span class="day btn">
-                                                    <%= data.cfg.female.time_start.date.lunar.day %>
-                                                </span>
-                                <span class="month vni">Tháng <%=
-                                    data.cfg.female.time_start.date.lunar.month %></span>
-                            </div>
-                            <span class="detail-time">(Tức ngày <%=
-                                data.cfg.female.time_start.date.lunar.day %>/
-                                                    <%= data.cfg.female.time_start.date.lunar.month %>)</span>
-                            <div style="padding-top:10px">Tại tự gia Nhà Gái</div>
-                            <div class="address">
-                                <%= data.cfg.female.location.text %>
-                            </div>
-
-                        </div>
-                        <div class="end-row"> ======================</div>
-
-                        <div class="card-description">
-                                            <span>Sự hiện diện của quý vị <br> là niềm vinh dự lớn cho gia đình Chúng
-                                                tôi</span>
-                        </div>
-
-                        <div class="wrap-footer">
-                            <div class="footer-information">
-                                <div class="home-male">
-                                    <span class="footer-header vni">Nhà Trai</span>
-                                    <div class="family-information">
-                                        <p class="family-name">
-                                            <%= data.cfg.male.parent.father %>
-                                        </p>
-                                        <p class="family-name">
-                                            <%= data.cfg.male.parent.mother %>
-                                        </p>
-                                    </div>
+                <div class="column">
+                    <div class="card-invite">
+                        <div class="card-wrap">
+                                
+                            <div class="card-header-invite">
+                                <div style="font-family: sf-medium; font-size: 16px;">
+                                    TRÂN TRỌNG KÍNH MỜI
                                 </div>
-                                <div class="home-female">
-                                    <span class="footer-header vni">Nhà Gái</span>
-                                    <div class="family-information">
-                                        <p class="family-name">
-                                            <%= data.cfg.female.parent.father %>
-                                        </p>
-                                        <p class="family-name">
-                                            <%= data.cfg.female.parent.mother %>
-                                        </p>
-                                    </div>
+                                <div class="card-header-inviter name vni" style="color: #7D695A;">
+                                    <%= (data.mode == 2 ? data.invitee.name : "Bạn và gia đình") %>
                                 </div>
+                                <div style="font-family: sf-regular; font-size: 16px;">
+                                    Đến dự buổi tiệc chung vui cùng <%= (data.mode == 2 ? data.invitee.level : "....") %>
+                                </div>
+                            </div>
+
+                            <div class="card-header-name">
+                                <div class="female-name vni" style="color: #7D695A;">
+                                    <%= data.cfg.male.name %>
+                                </div>
+                                <span style="line-height: 15px; color: #7D695A;"> &</span>
+                                <div class="female-name vni" style="color: #7D695A;">
+                                    <%= data.cfg.female.name %>
+                                </div>
+                            </div>
+                            
+                            <div class="card-information">
+                                <div style="font-family: sf-regular; font-size: 16px;">Hôn lễ được tổ chức tại Tư gia</div>
+                                <div class="address" style="font-family: sf-regular; font-size: 16px;">
+                                    <%= data.cfg.female.location.text %>
+                                </div>
+                                <div style="padding-top: 10px; font-family: sf-medium; font-size: 18px;">Vào lúc <%= data.cfg.female.time_start.time.hour %> : <%= data.cfg.female.time_start.time.minute %></div>
+                                <div class="information-time" style="color: #7D695A;">
+                                    <span class="week vni" style="color: #7D695A; font-size: 20px;"><%= data.cfg.female.time_start.date.day_of_week %></span>
+                                    <span class="day btn" style="font-family: sf-regular;"> <%= data.cfg.female.time_start.date.solar.day %></span>
+                                    <span class="month vni" style="color: #7D695A; font-size: 20px;">Tháng  <%= data.cfg.female.time_start.date.solar.month %></span>
+                                </div>
+                                <div style="font-family: sf-italic; font-size: 16px; color: #7D695A;">(Tức ngày <%= data.cfg.female.time_start.date.lunar.day %>/<%= data.cfg.female.time_start.date.lunar.month %> âm lịch)</div>
+                                
+    
+                            </div>
+                            <div class="end-row" style="font-family: sf-regular;"> ======================</div>
+
+                            <div class="card-description" style="font-family: sf-regular; font-size: 16px; padding-top: 20px;">
+                                <span>Sự hiện diện của <%= (data.mode == 2 ? data.invitee.message : "quý khách") %> <br> là niềm vinh hạnh lớn cho gia đình chúng tôi %>  <br> Rất hân hạnh được đón tiếp!</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer>
-
-                <ol id="page-numbers">
-
-                    <li>1</li>
-                    <li>2</li>
-
-                </ol>
-            </footer>
         </section>
+
     </div>
+
+    
 </div>
 
+
+<!-- Confetti container -->
+
+
+
+<!-- Confetti JavaScript -->
+<script>
+    // Confetti animation script
+    (function() {
+        var confettiContainer = document.querySelector('.confetti');
+        var colors = ['#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7', '#f7cad0', '#fae0e4'];
+        var confettiCount = 200;
+        var gravity = 0.5;
+        var terminalVelocity = 5;
+        var drag = 0.075;
+        var confetti = [];
+
+        function randomRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        function initConfetti() {
+            for (var i = 0; i < confettiCount; i++) {
+                var confettiPiece = document.createElement('div');
+                confettiPiece.classList.add('confetti-piece');
+                confettiPiece.style.backgroundColor = colors[Math.floor(randomRange(0, colors.length))];
+                confettiPiece.style.left = randomRange(0, window.innerWidth) + 'px';
+                confettiPiece.style.top = randomRange(-window.innerHeight, 0) + 'px';
+                confettiPiece.style.opacity = randomRange(0.5, 1);
+                confettiPiece.style.transform = 'rotate(' + randomRange(0, 360) + 'deg)';
+                confettiPiece.velocityX = randomRange(-1, 1);
+                confettiPiece.velocityY = randomRange(1, terminalVelocity);
+                confettiContainer.appendChild(confettiPiece);
+                confetti.push(confettiPiece);
+            }
+        }
+
+        function updateConfetti() {
+            confetti.forEach(function(confettiPiece) {
+                confettiPiece.velocityY += gravity;
+                confettiPiece.velocityX *= (1 - drag);
+                confettiPiece.velocityY *= (1 - drag);
+                confettiPiece.style.left = (parseFloat(confettiPiece.style.left) + confettiPiece.velocityX) + 'px';
+                confettiPiece.style.top = (parseFloat(confettiPiece.style.top) + confettiPiece.velocityY) + 'px';
+
+                if (parseFloat(confettiPiece.style.top) > window.innerHeight) {
+                    confettiPiece.style.top = randomRange(-window.innerHeight, 0) + 'px';
+                    confettiPiece.velocityY = randomRange(1, terminalVelocity);
+                }
+            });
+
+            requestAnimationFrame(updateConfetti);
+        }
+
+        initConfetti();
+        updateConfetti();
+    })();
+</script>
 
 <!-- END wrapper -->
 <!-- jQuery  -->

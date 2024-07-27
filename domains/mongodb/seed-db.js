@@ -3,8 +3,8 @@ const SeedDB = {
   user: {
     email: "admin@invitation.com",
     username: "admin",
-    password: "$2b$10$VhmfGtzS9/IZPQuLQhmXkeTZmXrHYjIV2HCRfsOEp66Yk/OJiwow2", //123qwe
-    password_confirm: "$2b$10$VhmfGtzS9/IZPQuLQhmXkeTZmXrHYjIV2HCRfsOEp66Yk/OJiwow2",
+    password: "$2a$12$BChiWT9RGVwRa2JHdjvFUuLAr6gLxEinghR5R534Mi4vO./JcfoJi", //123qwe
+    password_confirm: "$2a$12$BChiWT9RGVwRa2JHdjvFUuLAr6gLxEinghR5R534Mi4vO./JcfoJi",
     role: "admin"
   },
   dataConfig: {
@@ -15,7 +15,7 @@ const SeedDB = {
         mother: "Nguyễn Thị Chanh"
       },
       location: {
-        text: "Phước Lộc - Lộc Tiến - Phú Lộc - Thừa Thiên Huế",
+        text: "Khu Tái định cư thôn Phước Lộc - xã Lộc Tiến - huyện Phú Lộc - Thừa Thiên Huế",
         map: "https://maps.app.goo.gl/61aHtiQpCS3Y5uQL8"
       },
       time_start: {
@@ -38,24 +38,20 @@ const SeedDB = {
         }
       },
       finances: [{
-        provider_name: "MB Bank",
-        provider_number: "9971997555555",
-        holder_name: "NGUYEN VAN AN"
+        provider_name: "TPBank",
+        provider_number: "01853641501",
+        holder_name: "TRUONG VAN KIEN"
       }, {
-        provider_name: "Techcombank",
-        provider_number: "19034892842011",
-        holder_name: "NGUYEN VAN AN"
+        provider_name: "Vietcombank",
+        provider_number: "0041000334663",
+        holder_name: "TRUONG VAN KIEN"
       }, {
         provider_name: "Momo",
-        provider_number: "0973699999",
-        holder_name: "NGUYEN VAN AN"
-      }, {
-        provider_name: "Airpay",
-        provider_number: "0973699999",
-        holder_name: "NGUYEN VAN AN"
+        provider_number: "0946876983",
+        holder_name: "TRUONG VAN KIEN"
       }],
-      email: "male@gmail.com",
-      phone: "0973699999",
+      email: "vankien96@gmail.com",
+      phone: "0946876983",
       bg: '/assets/images/bg.jpg',
       bg_mobile: '/assets/images/bg_mobile.jpg',
       bg_fb: '/assets/images/bg-fb.jpg'
@@ -67,47 +63,35 @@ const SeedDB = {
         mother: ""
       },
       location: {
-        text: "Thôn 6 - Triệu Lăng - Triệu Phong - Quảng Trị",
+        text: "Hội trường thôn 6 - xã Triệu Lăng - huyện Triệu Phong - tỉnh Quảng Trị",
         map: "https://goo.gl/maps/tRjKuVRNisqxhQaT7"
       },
       time_start: {
         date: {
           lunar: {
-            day: "17",
-            month: "12",
-            year: "2020"
+            day: "19",
+            month: "08",
+            year: "2024"
           },
           day_of_week: "Thứ 7",
           solar: {
-            day: "17",
-            month: "12",
-            year: "2020"
+            day: "21",
+            month: "09",
+            year: "2024"
           }
         },
         time: {
-          hour: "10",
+          hour: "11",
           minute: "00"
         }
       },
       finances: [{
-        provider_name: "Techcombank",
-        provider_number: "19033799999999",
-        holder_name: "NGUYEN THI LAN ANH"
-      }, {
-        provider_name: "Techcombank",
-        provider_number: "19033799999999",
-        holder_name: "NGUYEN THI LAN ANH"
-      }, {
-        provider_name: "Momo",
-        provider_number: "09736",
-        holder_name: "NGUYEN THI LAN ANH"
-      }, {
-        provider_name: "Airpay",
-        provider_number: "0973699999",
-        holder_name: "NGUYEN VAN AN"
+        provider_name: "Vietinbank",
+        provider_number: "105877216713",
+        holder_name: "VO THI DIEN"
       }],
-      email: "female@gmail.com",
-      phone: "0985123123",
+      email: "dienevent@gmail.com",
+      phone: "0973599364",
       bg: '/assets/images/bg.jpg',
       bg_mobile: '/assets/images/bg_mobile.jpg',
       bg_fb: '/assets/images/bg-fb.jpg'
