@@ -294,12 +294,5 @@ function unicodeVni(text) {
 }
 
 $(document).ready(function () {
-  const unicodeTexts = $('.vni');
 
-  if (!unicodeTexts && unicodeTexts.length === 0) return;
-  for (let i = 0; i < unicodeTexts.length; i++) {
-    const element = unicodeTexts[i];
-    let text = element.textContent; 
-    $(element).text(unicodeVni(text.trim()));
-  }
 });

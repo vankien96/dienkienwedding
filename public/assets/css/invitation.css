@@ -1,8 +1,7 @@
 
 @font-face {
     font-family: wedding-font-vni;
-    src: url(../fonts/wedding/VfWedding19.ttf);
-    src: url('VfWedding19.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url(../fonts/wedding/SVN-Peristiwa.otf);
 }
 
 @font-face {
