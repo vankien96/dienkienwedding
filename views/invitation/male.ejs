@@ -17,7 +17,7 @@
     <meta property="fb:admins" content="100004574107394"/>
     <meta property="og:updated_time" content="<%= +new Date() %>"/>
     <meta name="keywords" content='Thân mời <%= (data.invitee !== null) ? data.invitee.name : "" %>'/>
-    <meta name="description" content="Sự hiện diện của quý khách là niềm vinh dự lớn cho gia đình Chúng tôi"/>
+    <meta name="description" content="Sự hiện diện của <%= (data.invitee !== null) ? data.invitee.message : 'quý khách' %> là niềm vinh hạnh lớn cho Gia đình Chúng tôi"/>
     <link rel="shortcut icon" href=""/>
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
