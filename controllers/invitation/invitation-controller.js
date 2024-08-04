@@ -12,6 +12,7 @@ class InvitationController extends BaseController {
         this.defaultPage = this.defaultPage.bind(this);
         this.detailInvitation = this.detailInvitation.bind(this);
         this.bankPage = this.bankPage.bind(this);
+        this.englishPage = this.englishPage.bind(this);
     }
 
     async defaultPage(req, res) {
@@ -30,6 +31,44 @@ class InvitationController extends BaseController {
                     invitee: null,
                 },
             });
+        } catch (error) {
+            res.render('err/occurs-error', {
+                layout: false,
+                err: error
+            });
+        }
+    }
+
+    async englishPage(req, res) {
+        const id = req.params.id.trim();
+        try {
+            let invitee = await this._facade.getDetailInvitee(id);
+            let config = await this._facade.getDefaultDataConfig();
+
+            if (!config) {
+                return res.render('err/occurs-error', {
+                    layout: false,
+                    err: "could not load default data"
+                });
+            }
+
+            if (!invitee) {
+                return res.render('err/e404', {
+                    layout: false,
+                });
+            }
+
+
+            res.render('invitation/english', {
+                layout: false,
+                data: {
+                    mode: MODE.HAS_DATA,
+                    cfg: config,
+                    invitee: invitee,
+                },
+            });
+
+
         } catch (error) {
             res.render('err/occurs-error', {
                 layout: false,

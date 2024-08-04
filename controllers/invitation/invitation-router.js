@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.get("/", controller.defaultPage);
 router.get('/:id', controller.detailInvitation);
+router.get('/:id/en', controller.englishPage);
 router.get('/bank', controller.bankPage);
 
 module.exports = router;

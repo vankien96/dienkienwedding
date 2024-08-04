@@ -15,7 +15,7 @@ const SeedDB = {
         mother: "Nguyễn Thị Chanh"
       },
       location: {
-        text: "Khu Tái định cư thôn Phước Lộc - Lộc Tiến - Phú Lộc - Thừa Thiên Huế",
+        text: "Thôn Phước Lộc - Xã Lộc Tiến - Huyện Phú Lộc - Tỉnh Thừa Thiên Huế",
         map: "https://maps.app.goo.gl/61aHtiQpCS3Y5uQL8"
       },
       time_start: {
@@ -61,8 +61,8 @@ const SeedDB = {
         mother: ""
       },
       location: {
-        text: "Hội trường thôn 6 - Triệu Lăng - Triệu Phong - Quảng Trị",
-        map: "https://maps.app.goo.gl/Qd57ACq1TYsCXCNr7"
+        text: "Thôn 6 - Xã Triệu Lăng - Huyện Triệu Phong - Tỉnh Quảng Trị",
+        map: "https://maps.app.goo.gl/VW2e1iFLeDs9UVq9A"
       },
       time_start: {
         date: {

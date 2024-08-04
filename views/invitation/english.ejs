@@ -5,19 +5,19 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui"/>
-    <title> Thân mời <%= (data.invitee !== null) ? data.invitee.name : "bạn" %> </title>
+    <title> Dear <%= (data.invitee !== null) ? data.invitee.name : "bạn" %> </title>
 
     <meta proeperty="og:url" content="https://dienkienwedding.site/"/>
     <meta property="og:site_name" content="Happy wedding"/>
 
-    <meta property="og:image" content="<%= data.cfg.female.bg_fb %>?v=<%= +new Date() %>"/>
-    <meta property="og:image:secure_url" content="<%= data.cfg.female.bg_fb %>?v=<%= +new Date() %>"/>
+    <meta property="og:image" content="<%= data.cfg.male.bg_fb %>?v=<%= +new Date() %>"/>
+    <meta property="og:image:secure_url" content="<%= data.cfg.male.bg_fb %>?v=<%= +new Date() %>"/>
     <meta property="og:image:width" content="1248"/>
     <meta property="og:image:height" content="702"/>
     <meta property="fb:admins" content="100004574107394"/>
     <meta property="og:updated_time" content="<%= +new Date() %>"/>
-    <meta name="keywords" content='Thân mời <%= (data.invitee !== null) ? data.invitee.name : "" %>'/>
-    <meta name="description" content="Sự hiện diện của <%= (data.invitee !== null) ? data.invitee.message : 'quý khách' %> là niềm vinh hạnh lớn cho Gia đình Chúng tôi"/>
+    <meta name="keywords" content='Dear <%= (data.invitee !== null) ? data.invitee.name : "" %>'/>
+    <meta name="description" content="Your presence will complete the joy of our celebration. We look forward to creating cherished memories with you on this special day./>
     <link rel="shortcut icon" href="assets/images/favicon.ico"/>
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -37,7 +37,7 @@
             right: 0px;
             bottom: 0px;
             left: 0px;
-            background-image: url('<%= data.cfg.female.bg %>');
+            background-image: url('<%= data.cfg.male.bg %>');
             background-size: cover;
         }
 
@@ -82,25 +82,6 @@
                 <div class="column">
                     <div class="cover-column" style="z-index: 100;"></div>
                     <div class="card-welcome">
-                        <div class="share-buttons" style="padding-left: 8px;">
-                            <a style="padding-top: 8px"
-                               href="/bank"
-                            %>
-                            '
-                            target="_blank">
-                            <div class="share-button">
-                                <div class="share-button-secondary">
-                                    <div class="share-button-secondary-content">
-                                        Mừng cưới
-                                    </div>
-                                </div>
-                                <div class="share-button-primary">
-                                    <i class="share-button-icon ti-money"></i>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-
                         <div class="wrap-card-welcome">
 
                             <div class="card-welcome-header">
@@ -117,11 +98,11 @@
                                     Văn Kiên - Mỹ Diện
                                 </div>
                                 <div style="color: white; font-family: sf-regular;">
-                                    <%= data.cfg.female.time_start.date.solar.day %>
+                                    <%= data.cfg.male.time_start.date.solar.day %>
                                     -
-                                    <%= data.cfg.female.time_start.date.solar.month %>
+                                    <%= data.cfg.male.time_start.date.solar.month %>
                                     -
-                                    <%= data.cfg.female.time_start.date.solar.year %>
+                                    <%= data.cfg.male.time_start.date.solar.year %>
                                 </div>
     
                             </div>
@@ -134,18 +115,18 @@
                                 
                             <div class="card-header-invite">
                                 <div style="font-family: sf-medium; font-size: 16px;">
-                                    TRÂN TRỌNG KÍNH MỜI
+                                    WE REQUEST THE HONOR OF YOUR PRESENCE
                                 </div>
                                 <div class="card-header-inviter name vni" style="color: #7D695A;">
-                                    <%= (data.mode == 2 ? data.invitee.name : "Bạn và gia đình") %>
+                                    <%= (data.mode == 2 ? data.invitee.name : "KZ") %>
                                 </div>
                                 <div style="font-family: sf-regular; font-size: 16px;">
-                                    Đến dự buổi tiệc chung vui cùng <%= (data.mode == 2 ? data.invitee.level : "....") %>
+                                    Please share in our celebration by joining us for our wedding
                                 </div>
                             </div>
 
                             <div class="card-header-name">
-                                <div class="female-name vni" style="color: #7D695A;">
+                                <div class="male-name vni" style="color: #7D695A;">
                                     <%= data.cfg.male.name %>
                                 </div>
                                 <span style="line-height: 15px; color: #7D695A;"> &</span>
@@ -155,29 +136,29 @@
                             </div>
                             
                             <div class="card-information">
-                                <div style="font-family: sf-regular; font-size: 16px;">Buổi tiệc sẽ được tổ chức tại Tư gia</div>
+                                <div style="font-family: sf-regular; font-size: 16px;">The wedding reception will be held at</div>
                                 <div class="address" style="font-family: sf-regular; font-size: 16px;">
-                                    <%= data.cfg.female.location.text %>
+                                    Phuoc Loc - Loc Tien - Phu Loc - Thua Thien Hue
                                 </div>
                                 <a style="padding-top: 5px"
-                                    href="<%= data.cfg.female.location.map %>"
+                                    href="<%= data.cfg.male.location.map %>"
                                     target="_blank">
-                                    (Xem bản đồ)
+                                    (See maps)
                                 </a>
-                                <div style="padding-top: 10px; font-family: sf-medium; font-size: 18px;">Vào lúc <%= data.cfg.female.time_start.time.hour %> : <%= data.cfg.female.time_start.time.minute %></div>
+                                <div style="padding-top: 10px; font-family: sf-medium; font-size: 18px;">At <%= data.cfg.male.time_start.time.hour %> : <%= data.cfg.male.time_start.time.minute %> AM</div>
                                 <div class="information-time" style="color: #7D695A;">
-                                    <span class="week vni" style="color: #7D695A; font-size: 20px;"><%= data.cfg.female.time_start.date.day_of_week %></span>
-                                    <span class="day btn" style="font-family: sf-regular;"> <%= data.cfg.female.time_start.date.solar.day %></span>
-                                    <span class="month vni" style="color: #7D695A; font-size: 20px;">Tháng  <%= data.cfg.female.time_start.date.solar.month %></span>
+                                    <span class="week vni" style="color: #7D695A; font-size: 20px;">Sunday</span>
+                                    <span class="day btn" style="font-family: sf-regular;"> 22</span>
+                                    <span class="month vni" style="color: #7D695A; font-size: 20px;">September</span>
                                 </div>
-                                <div style="font-family: sf-italic; font-size: 16px; color: #7D695A;">(Tức ngày <%= data.cfg.female.time_start.date.lunar.day %>/<%= data.cfg.female.time_start.date.lunar.month %> âm lịch)</div>
+                                <div style="font-family: sf-italic; font-size: 16px; color: #7D695A;"></div>
                                 
     
                             </div>
                             <div class="end-row" style="font-family: sf-regular;"> ======================</div>
 
                             <div class="card-description" style="font-family: sf-regular; font-size: 16px; padding-top: 20px;">
-                                <span>Sự hiện diện của <%= (data.mode == 2 ? data.invitee.message : "quý khách") %> <br> là niềm vinh hạnh lớn cho Gia đình Chúng tôi %>  <br> Rất hân hạnh được đón tiếp!</span>
+                                <span>Your presence will complete the joy of our celebration. We look forward to creating cherished memories with you on this special day. <br> With love, <br> Kien & Dien</span>
                             </div>
                         </div>
                     </div>

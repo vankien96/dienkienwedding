@@ -83,20 +83,6 @@
                     <div class="cover-column" style="z-index: 100;"></div>
                     <div class="card-welcome">
                         <div class="share-buttons" style="padding-left: 8px;">
-                            <a style="padding-top: 5px"
-                               href="<%= data.cfg.male.location.map %>"
-                               target="_blank">
-                                <div class="share-button">
-                                    <div class="share-button-secondary">
-                                        <div class="share-button-secondary-content">
-                                            Bản đồ
-                                        </div>
-                                    </div>
-                                    <div class="share-button-primary">
-                                        <i class="share-button-icon ti-map"></i>
-                                    </div>
-                                </div>
-                            </a>
                             <a style="padding-top: 8px"
                                href="/bank"
                             %>
@@ -123,7 +109,7 @@
                                 </div>
                                 <div style="display: flex; align-items: center;">
                                     <div class="card-welcome-text vni" style="font-size: 60px;">K</div>
-                                    <div class="card-welcome-text vni" style="font-size: 20px; margin-left: 30px; margin-right: 30px;">🤍</div>
+                                    <div class="card-welcome-text vni" style="font-size: 20px; margin-left: 30px; margin-right: 20px;">🤍</div>
                                     <div class="card-welcome-text vni" style="font-size: 60px;">D</div>
                                 </div>
                                 
@@ -154,7 +140,7 @@
                                     <%= (data.mode == 2 ? data.invitee.name : "Bạn và gia đình") %>
                                 </div>
                                 <div style="font-family: sf-regular; font-size: 16px;">
-                                    Đến dự buổi tiệc chung vui cùng <%= (data.mode == 2 ? data.invitee.level : "....") %>
+                                    Đến dự buổi tiệc chung vui cùng <%= (data.mode == 2 ? data.invitee.level : "gia đình chúng tôi") %>
                                 </div>
                             </div>
 
@@ -169,10 +155,15 @@
                             </div>
                             
                             <div class="card-information">
-                                <div style="font-family: sf-regular; font-size: 16px;">Hôn lễ được tổ chức tại Tư gia</div>
+                                <div style="font-family: sf-regular; font-size: 16px;">Buổi tiệc sẽ được tổ chức tại Tư gia</div>
                                 <div class="address" style="font-family: sf-regular; font-size: 16px;">
                                     <%= data.cfg.male.location.text %>
                                 </div>
+                                <a style="padding-top: 5px"
+                                    href="<%= data.cfg.male.location.map %>"
+                                    target="_blank">
+                                    (Xem bản đồ)
+                                </a>
                                 <div style="padding-top: 10px; font-family: sf-medium; font-size: 18px;">Vào lúc <%= data.cfg.male.time_start.time.hour %> : <%= data.cfg.male.time_start.time.minute %></div>
                                 <div class="information-time" style="color: #7D695A;">
                                     <span class="week vni" style="color: #7D695A; font-size: 20px;"><%= data.cfg.male.time_start.date.day_of_week %></span>
