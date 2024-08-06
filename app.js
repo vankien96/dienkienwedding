@@ -41,6 +41,10 @@ app.use(
 
 app.use('/', require('./controllers'));
 
+app.use('/gallery', function (req, res) {
+    res.render('gallery/gallery');
+});
+
 // catch 404 and forward to error handler
 
 app.use('*', function (req, res) {

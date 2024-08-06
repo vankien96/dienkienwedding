@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
     <title>Bank information</title>
     <meta content="Admin Dashboard" name="description">
-    <link rel="shortcut icon" href="https://sauanla.com/wp-content/uploads/2020/06/ico-logo-sauanla2-300x245.png" />
+    <link rel="shortcut icon" href="" />
     <meta content="Themesbrand" name="author">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -33,16 +33,16 @@
                     <div class="row justify-content-center mb-5">
                         <div class="col-lg-5">
                             <div class="text-center faq-title pt-4 pb-4">
-                                <div class="pt-3 pb-3"><i class="ti-comments text-primary h3"></i></div>
-                                <h5>If you can't join the wedding party?</h5>
-                                <p class="text-muted">Below are some information about the bank account us.</p>
+                                <div class="pt-3 pb-3"><i class="ti-gift text-primary h3"></i></div>
+                                <h5>Bạn có thể mừng cưới tụi mình bằng một trong những cách dưới đây</h5>
+                                <p class="text-muted">Thank you so much 🤍🤍🤍</p>
                             </div>
                         </div>
                     </div>
                     <!-- end row -->
                     <div class="row justify-content-center">
                         <div class="col-lg-5  pt-3">
-                            <h5 class="mt-0 font-18 mb-4"><i class="ti-agenda text-primary mr-2 vni"></i>
+                            <h5 class="mt-0 font-18 mb-4"><i class="ti-bookmark-alt text-primary mr-2 vni"></i>
                                 Nhà trai
                             </h5>
                             <div class="accordion" id="accordionExample"> 
@@ -56,21 +56,23 @@
                                         </a>
                                         <div id="collapse_<%= i %>" class="collapse <%=  i == 0 ? 'show' : '' %>" aria-labelledby="heading_<%= i %>"
                                             data-parent="#accordionExample">
-                                            <img src="<%= data.cfg.male.finances[i].qr_code %>" width="200px">
-                                            <div class="card-body copy">
-                                                <p class="text-muted mb-0 faq-ans">
-                                                    STK: <b><%= data.cfg.male.finances[i].provider_number %></b>
-                                                    <br>
-                                                    NAME: <%= data.cfg.male.finances[i].holder_name %>
-                                                </p>
-                                                <div class="copy">
-                                                    <button
-                                                        class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"
-                                                        type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false" data-clipboard-text="<%= data.cfg.male.finances[i].provider_number %>">
-                                                        <i class="fas fa-copy mr-2"></i>
-                                                        Copy
-                                                    </button>
+                                            <img style="padding-left: 40px;" src="<%= data.cfg.male.finances[i].qr_code %>" width="200px">
+                                            <div style="padding-left: 20px;">
+                                                <div class="card-body copy" style="align-items: center;">
+                                                    <p class="text-muted mb-0 faq-ans">
+                                                        STK: <b><%= data.cfg.male.finances[i].provider_number %></b>
+                                                        <br>
+                                                        NAME: <%= data.cfg.male.finances[i].holder_name %>
+                                                    </p>
+                                                    <div class="copy" style="padding-left: 16px;">
+                                                        <button
+                                                            class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"
+                                                            type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false" data-clipboard-text="<%= data.cfg.male.finances[i].provider_number %>">
+                                                            <i class="fas fa-copy mr-2"></i>
+                                                            Copy
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
     
@@ -82,7 +84,7 @@
                             <!-- end accordian -->
                         </div>
                         <div class="col-lg-5 offset-lg-1 pt-3">
-                            <h5 class="mt-0 font-18 mb-4"><i class="ti-bookmark-alt text-primary mr-2"></i>
+                            <h5 class="mt-0 font-18 mb-4"><i class="ti-bookmark-alt text-primary mr-2 vni"></i>
                                 Nhà gái
                             </h5>
                             <div class="accordion" id="accordionExample2">
@@ -97,21 +99,23 @@
                                         <div id="collapse_<%= i+data.cfg.male.finances.length %>" class="collapse <%=  i == 0 ? 'show' : '' %>" 
                                             aria-labelledby="heading_<%= i+ data.cfg.male.finances.length %>"
                                             data-parent="#accordionExample2">
-                                            <img src="<%= data.cfg.female.finances[i].qr_code %>" width="200px">
-                                            <div class="card-body copy">
-                                                <p class="text-muted mb-0 faq-ans">
-                                                    STK: <b><%= data.cfg.female.finances[i].provider_number %></b>
-                                                    <br>
-                                                    NAME: <%= data.cfg.female.finances[i].holder_name %>
-                                                </p>
-                                                <div class="copy">
-                                                    <button
-                                                        class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"
-                                                        type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false" data-clipboard-text="<%= data.cfg.female.finances[i].provider_number %>">
-                                                        <i class="fas fa-copy mr-2"></i>
-                                                        Copy
-                                                    </button>
+                                            <img style="padding-left: 40px;" src="<%= data.cfg.female.finances[i].qr_code %>" width="200px">
+                                            <div style="padding-left: 20px;">
+                                                <div class="card-body copy" style="align-items: center;">
+                                                    <p class="text-muted mb-0 faq-ans">
+                                                        STK: <b><%= data.cfg.female.finances[i].provider_number %></b>
+                                                        <br>
+                                                        NAME: <%= data.cfg.female.finances[i].holder_name %>
+                                                    </p>
+                                                    <div class="copy" style="padding-left: 16px;">
+                                                        <button
+                                                            class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"
+                                                            type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false" data-clipboard-text="<%= data.cfg.female.finances[i].provider_number %>">
+                                                            <i class="fas fa-copy mr-2"></i>
+                                                            Copy
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
     

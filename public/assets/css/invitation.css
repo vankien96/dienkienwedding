@@ -616,7 +616,6 @@
 
 .card-body.copy {
     display: flex;
-    justify-content: space-around;
 }
 
 .btn-bottom-right {
