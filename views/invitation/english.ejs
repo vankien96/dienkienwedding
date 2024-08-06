@@ -133,13 +133,7 @@
                                 
                             <div class="card-header-invite">
                                 <div style="font-family: sf-medium; font-size: 16px;">
-                                    WE REQUEST THE HONOR OF YOUR PRESENCE
-                                </div>
-                                <div class="card-header-inviter name vni" style="color: #7D695A;">
-                                    <%= (data.mode == 2 ? data.invitee.name : "KZ") %>
-                                </div>
-                                <div style="font-family: sf-regular; font-size: 16px;">
-                                    to celebrate our wedding
+                                    TOGETHER WITH THEIR FAMIILIES
                                 </div>
                             </div>
 
@@ -152,7 +146,19 @@
                                     <%= data.cfg.female.name %>
                                 </div>
                             </div>
-                            
+
+                            <div class="card-header-invite">
+                                <div style="font-family: sf-regular; font-size: 16px;">
+                                    REQUEST THE PLEASE OF YOUR COMPANY <br> AT THEIR WEDDING
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="card-header-inviter name vni" style="font-size: 30px; color: #7D695A; padding-top: 20px; padding-bottom: 20px;">
+                                <%= (data.mode == 2 ? data.invitee.name : "") %>
+                            </div>
+
                             <div class="card-information">
                                 <div style="font-family: sf-regular; font-size: 16px;">The wedding reception will be held at</div>
                                 <div class="address" style="font-family: sf-regular; font-size: 16px;">
