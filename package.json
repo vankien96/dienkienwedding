@@ -28,6 +28,7 @@
     "express-recaptcha": "^5.0.2",
     "express-session": "^1.17.1",
     "express-validator": "^6.0.0",
+    "forever-monitor": "^3.0.3",
     "fs": "^0.0.1-security",
     "html": "^1.0.0",
     "jsonwebtoken": "^8.5.1",

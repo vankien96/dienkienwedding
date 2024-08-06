@@ -1,0 +1,296 @@
+
+> wedding-invitation@0.0.0 start
+> node ./bin/www | "node_modules/.bin/bunyan"
+
+[2024-07-27T06:03:29.832Z]  INFO: development/13381 on wedding: --------------- INIT TIME-UTIL CLASS ---------------
+(node:13381) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13381) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+[2024-07-27T06:03:30.023Z]  INFO: development/13381 on wedding: ✓ The bundle is now ready for serving!
+[2024-07-27T06:03:30.024Z]  INFO: development/13381 on wedding: Open in inline mode: http://localhost:3001
+[2024-07-27T06:03:30.567Z]  INFO: development/13381 on wedding: Successfully connected to the mongodb database
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 114.869 ms - 12308[0m
+[0mGET /favicon.ico [36m304[0m 2.258 ms - -[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 96.204 ms - 12308[0m
+[0mGET /favicon.ico [36m304[0m 1.891 ms - -[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 93.529 ms - 12308[0m
+[0mGET /favicon.ico [36m304[0m 1.389 ms - -[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 93.550 ms - 12308[0m
+[0mGET /favicon.ico [36m304[0m 1.248 ms - -[0m
+[0mGET /invitation/66a3cba22b246870482130de?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo [32m200[0m 93.275 ms - 12308[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 92.533 ms - 12308[0m
+[0mGET /favicon.ico [36m304[0m 1.491 ms - -[0m
+[0mGET /manager [36m302[0m 2.833 ms - 88[0m
+[0mGET /manager/account/login [32m200[0m 3.413 ms - 4520[0m
+[0mPOST /manager/account/login [32m200[0m 401.264 ms - 92[0m
+[0mGET /manager/invitation [32m200[0m 57.249 ms - 17716[0m
+[0mGET /favicon.ico [36m304[0m 1.499 ms - -[0m
+[0mGET /manager/invitation [36m304[0m 54.685 ms - -[0m
+[0mGET /favicon.ico [36m304[0m 2.522 ms - -[0m
+
+> wedding-invitation@0.0.0 start
+> node ./bin/www | "node_modules/.bin/bunyan"
+
+[2024-07-27T06:08:04.955Z]  INFO: development/13421 on wedding: --------------- INIT TIME-UTIL CLASS ---------------
+(node:13421) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13421) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+[2024-07-27T06:08:05.145Z] ERROR: development/13421 on wedding: Port 3001 is already in use
+
+> wedding-invitation@0.0.0 prod
+> node ./bin/www
+
+{"name":"development","hostname":"wedding","pid":13482,"level":30,"msg":"--------------- INIT TIME-UTIL CLASS ---------------","time":"2024-07-27T06:08:56.050Z","v":0}
+(node:13482) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13482) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+{"name":"development","hostname":"wedding","pid":13482,"level":50,"msg":"Port 3001 is already in use","time":"2024-07-27T06:08:56.237Z","v":0}
+[0mGET /manager/invitation [36m302[0m 1.390 ms - 88[0m
+[0mGET /manager/account/login [32m200[0m 1.862 ms - 4520[0m
+[0mPOST /manager/account/login [32m200[0m 367.408 ms - 92[0m
+[0mGET /manager/invitation [32m200[0m 47.494 ms - 17716[0m
+[0mGET /favicon.ico [32m200[0m 1.759 ms - 2810[0m
+[0mGET /manager/invitation [32m200[0m 47.472 ms - 17716[0m
+[0mGET /favicon.ico [32m200[0m 1.389 ms - 2810[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 92.746 ms - 12308[0m
+[0mGET / [36m302[0m 1.166 ms - 33[0m
+[0mGET /invitation [32m200[0m 53.391 ms - 12319[0m
+Killed
+
+> wedding-invitation@0.0.0 prod
+> node ./bin/www
+
+{"name":"development","hostname":"wedding","pid":13605,"level":30,"msg":"--------------- INIT TIME-UTIL CLASS ---------------","time":"2024-07-27T06:12:13.230Z","v":0}
+(node:13605) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13605) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+{"name":"development","hostname":"wedding","pid":13605,"level":30,"msg":"✓ The bundle is now ready for serving!","time":"2024-07-27T06:12:13.401Z","v":0}
+{"name":"development","hostname":"wedding","pid":13605,"level":30,"msg":"Open in inline mode: http://localhost:3001","time":"2024-07-27T06:12:13.401Z","v":0}
+{"name":"development","hostname":"wedding","pid":13605,"level":30,"msg":"Successfully connected to the mongodb database","time":"2024-07-27T06:12:13.914Z","v":0}
+
+> wedding-invitation@0.0.0 prod
+> node ./bin/www
+
+{"name":"development","hostname":"wedding","pid":13653,"level":30,"msg":"--------------- INIT TIME-UTIL CLASS ---------------","time":"2024-07-27T06:12:58.872Z","v":0}
+(node:13653) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13653) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+{"name":"development","hostname":"wedding","pid":13653,"level":30,"msg":"✓ The bundle is now ready for serving!","time":"2024-07-27T06:12:59.064Z","v":0}
+{"name":"development","hostname":"wedding","pid":13653,"level":30,"msg":"Open in inline mode: http://localhost:3001","time":"2024-07-27T06:12:59.065Z","v":0}
+{"name":"development","hostname":"wedding","pid":13653,"level":30,"msg":"Successfully connected to the mongodb database","time":"2024-07-27T06:12:59.592Z","v":0}
+[0mGET /manager/account/login [32m200[0m 9.845 ms - 4520[0m
+[0mGET /manager/account/login [36m304[0m 2.746 ms - -[0m
+[0mGET /manager/account/login [36m304[0m 1.821 ms - -[0m
+
+> wedding-invitation@0.0.0 start
+> node ./bin/www | "node_modules/.bin/bunyan"
+
+[2024-07-27T06:13:19.800Z]  INFO: development/13677 on wedding: --------------- INIT TIME-UTIL CLASS ---------------
+(node:13677) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13677) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+[2024-07-27T06:13:19.976Z]  INFO: development/13677 on wedding: ✓ The bundle is now ready for serving!
+[2024-07-27T06:13:19.976Z]  INFO: development/13677 on wedding: Open in inline mode: http://localhost:3001
+[2024-07-27T06:13:20.473Z]  INFO: development/13677 on wedding: Successfully connected to the mongodb database
+[0mGET /manager/account/login [32m200[0m 9.648 ms - 4520[0m
+[0mGET /manager/account/login [36m304[0m 3.294 ms - -[0m
+[0mGET /manager/account/login [32m200[0m 1.887 ms - 4520[0m
+[0mPOST /manager/account/login [32m200[0m 388.067 ms - 92[0m
+[0mGET /manager/invitation [32m200[0m 48.596 ms - 17744[0m
+[0mGET /favicon.ico [32m200[0m 2.053 ms - 2810[0m
+[2024-07-27T06:13:46.314Z] ERROR: development/13677 on wedding: this._model.remove is not a function
+[0mDELETE /manager/invitation/delete [32m200[0m 84.242 ms - 105[0m
+[2024-07-27T06:13:50.551Z] ERROR: development/13677 on wedding: this._model.remove is not a function
+[0mDELETE /manager/invitation/delete [32m200[0m 83.578 ms - 105[0m
+[0mGET /invitation/66a3ad95320c9208fca70305 [32m200[0m 90.743 ms - 12364[0m
+[0mGET /favicon.ico [36m304[0m 2.639 ms - -[0m
+[2024-07-27T06:15:18.520Z] ERROR: development/13677 on wedding: this._model.remove is not a function
+[0mDELETE /manager/invitation/delete [32m200[0m 85.359 ms - 105[0m
+[2024-07-27T06:16:54.301Z] ERROR: development/13677 on wedding: this._model.remove is not a function
+[0mDELETE /manager/invitation/delete [32m200[0m 91.882 ms - 105[0m
+Killed
+
+> wedding-invitation@0.0.0 start
+> node ./bin/www | "node_modules/.bin/bunyan"
+
+[2024-07-27T06:27:03.507Z]  INFO: development/13945 on wedding: --------------- INIT TIME-UTIL CLASS ---------------
+[2024-07-27T06:27:03.681Z]  INFO: development/13945 on wedding: ✓ The bundle is now ready for serving!
+[2024-07-27T06:27:03.681Z]  INFO: development/13945 on wedding: Open in inline mode: http://localhost:3001
+[2024-07-27T06:27:04.217Z]  INFO: development/13945 on wedding: Successfully connected to the mongodb database
+[0mGET /manager/invitation [36m302[0m 5.341 ms - 88[0m
+[0mGET /manager/account/login [32m200[0m 8.161 ms - 4520[0m
+[0mPOST /manager/account/login [32m200[0m 395.925 ms - 92[0m
+[0mGET /manager/invitation [32m200[0m 55.181 ms - 16747[0m
+[0mGET /favicon.ico [32m200[0m 1.983 ms - 2810[0m
+Killed
+
+> wedding-invitation@0.0.0 start
+> node ./bin/www | "node_modules/.bin/bunyan"
+
+[2024-07-27T06:47:50.956Z]  INFO: development/14030 on wedding: --------------- INIT TIME-UTIL CLASS ---------------
+[2024-07-27T06:47:51.157Z]  INFO: development/14030 on wedding: ✓ The bundle is now ready for serving!
+[2024-07-27T06:47:51.157Z]  INFO: development/14030 on wedding: Open in inline mode: http://localhost:3001
+[2024-07-27T06:47:51.678Z]  INFO: development/14030 on wedding: Successfully connected to the mongodb database
+[0mGET /manager/invitation [36m302[0m 5.215 ms - 88[0m
+[0mGET /manager/account/login [32m200[0m 12.831 ms - 4520[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 103.700 ms - 12333[0m
+[0mGET /invitation/assets/images/favicon.ico [32m200[0m 2.436 ms - 2810[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 90.984 ms - 12333[0m
+[0mGET /invitation/assets/images/favicon.ico [32m200[0m 2.129 ms - 2810[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 88.185 ms - 12333[0m
+[0mGET /invitation/assets/images/favicon.ico [32m200[0m 1.288 ms - 2810[0m
+[0mGET / [36m302[0m 1.298 ms - 66[0m
+[0mGET /invitation [32m200[0m 50.816 ms - 12344[0m
+[0mGET / [36m302[0m 0.755 ms - 33[0m
+[0mGET / [36m302[0m 0.935 ms - 33[0m
+[0mGET /invitation [32m200[0m 45.997 ms - 12344[0m
+[0mGET /favicon.ico [32m200[0m 1.236 ms - 2810[0m
+[0mGET / [36m302[0m 0.679 ms - 33[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 103.611 ms - 12333[0m
+[0mGET /invitation/assets/images/favicon.ico [32m200[0m 1.572 ms - 2810[0m
+[0mGET /invitation/66a3cba22b246870482130de [32m200[0m 88.809 ms - 12333[0m
+[0mGET /invitation/assets/images/favicon.ico [32m200[0m 1.715 ms - 2810[0m
+[0mGET /favicon.ico [36m304[0m 1.783 ms - -[0m
+[0mGET /public/assets/images/favicon.ico [32m200[0m 1.482 ms - 2810[0m
+[0mGET /favicon.ico [36m304[0m 1.305 ms - -[0m
+[0mGET /favicon.ico [32m200[0m 1.407 ms - 2810[0m
+[0mGET /favicon.ico [36m304[0m 1.263 ms - -[0m
+[0mGET / [36m302[0m 0.925 ms - 66[0m
+[0mGET /invitation [32m200[0m 46.253 ms - 12344[0m
+[0mGET /invitation [32m200[0m 45.387 ms - 12344[0m
+[0mGET / [36m302[0m 0.858 ms - 33[0m
+[0mGET /invitation [32m200[0m 47.179 ms - 12344[0m
+[0mGET / [36m302[0m 1.043 ms - 66[0m
+[0mGET /invitation [32m200[0m 49.706 ms - 12344[0m
+[0mGET / [36m302[0m 0.901 ms - 33[0m
+[0mGET /invitation [32m200[0m 47.593 ms - 12344[0m
+[0mGET / [36m302[0m 0.959 ms - 33[0m
+[0mGET / [36m302[0m 0.894 ms - 33[0m
+[0mGET / [36m302[0m 0.940 ms - 66[0m
+[0mGET /invitation [32m200[0m 45.980 ms - 12344[0m
+[0mGET / [36m302[0m 1.239 ms - 33[0m
+[0mGET /invitation [32m200[0m 44.258 ms - 12344[0m
+[0mGET / [36m302[0m 0.814 ms - 66[0m
+[0mGET /invitation [32m200[0m 45.855 ms - 12344[0m
+[0mGET / [36m302[0m 1.056 ms - 66[0m
+[0mGET /invitation [32m200[0m 47.226 ms - 12344[0m
+[0mGET / [36m302[0m 0.949 ms - 33[0m
+[0mGET /invitation [32m200[0m 45.974 ms - 12344[0m
+[0mGET / [36m302[0m 0.682 ms - 66[0m
+[0mGET /invitation [32m200[0m 44.341 ms - 12344[0m
+[0mGET /invitation [32m200[0m 44.596 ms - 12344[0m
+[0mHEAD /favicon.ico [32m200[0m 1.223 ms - 2810[0m
+[0mGET /favicon.ico [32m200[0m 1.090 ms - 2810[0m
+[0mGET / [36m302[0m 0.727 ms - 33[0m
+[0mGET /invitation [32m200[0m 45.806 ms - 12344[0m
+[0mGET / [36m302[0m 0.709 ms - 66[0m
+[0mGET /invitation [32m200[0m 45.088 ms - 12344[0m
+[0mGET /invitation [32m200[0m 44.603 ms - 12344[0m
+[0mHEAD /favicon.ico [32m200[0m 1.098 ms - 2810[0m
+[0mGET / [36m302[0m 0.720 ms - 33[0m
+[0mGET /invitation [32m200[0m 40.888 ms - 12344[0m
+[0mGET / [36m302[0m 1.123 ms - 33[0m
+[0mGET /invitation [32m200[0m 41.847 ms - 12344[0m
+[0mGET / [36m302[0m 0.782 ms - 33[0m
+[0mGET / [36m302[0m 0.616 ms - 33[0m
+[0mGET /invitation [32m200[0m 41.632 ms - 12344[0m
+[0mGET /invitation [32m200[0m 41.047 ms - 12344[0m
+[0mGET / [36m302[0m 0.715 ms - 33[0m
+[0mGET / [36m302[0m 1.615 ms - 33[0m
+[0mGET /invitation [32m200[0m 44.964 ms - 12344[0m
+[0mGET /invitation [32m200[0m 44.363 ms - 12344[0m
+[0mGET / [36m302[0m 0.824 ms - 33[0m
+[0mGET /invitation [32m200[0m 45.380 ms - 12344[0m
+[0mGET / [36m302[0m 1.074 ms - 33[0m
+[0mGET / [36m302[0m 0.882 ms - 33[0m
+[0mGET /invitation [32m200[0m 42.713 ms - 12344[0m
+[0mGET /favicon.ico [32m200[0m 1.479 ms - 2810[0m
+[0mGET / [36m302[0m 0.797 ms - 33[0m
+[0mGET /actuator/health [32m200[0m 1.276 ms - 2810[0m
+[0mGET / [36m302[0m 1.271 ms - 66[0m
+[0mGET /invitation [32m200[0m 44.308 ms - 12344[0m
+[0mGET /invitation/assets/images/favicon.ico [32m200[0m 1.522 ms - 2810[0m
+[0mGET /invitation/ads.txt [32m200[0m 14.869 ms - 2613[0m
+[0mGET /invitation/app-ads.txt [32m200[0m 2.473 ms - 2617[0m
+[0mGET /invitation/sellers.json [32m200[0m 2.124 ms - 2618[0m
+[0mGET /invitation/assets/js/jquery.min.js [32m200[0m 2.805 ms - 2810[0m
+[0mGET /invitation/assets/js/bootstrap.bundle.min.js [32m200[0m 1.111 ms - 2810[0m
+[0mGET /invitation/assets/js/metisMenu.min.js [32m200[0m 1.206 ms - 2810[0m
+[0mGET /invitation/assets/js/jquery.slimscroll.js [32m200[0m 1.226 ms - 2810[0m
+[0mGET /invitation/assets/js/waves.min.js [32m200[0m 1.051 ms - 2810[0m
+[0mGET /invitation/plugins/toastr/toastr.min.js [32m200[0m 2.174 ms - 2810[0m
+[0mGET /invitation/assets/js/app.js [32m200[0m 1.164 ms - 2810[0m
+[0mGET /invitation/assets/js/base/ajax.js [32m200[0m 1.056 ms - 2810[0m
+[0mGET /invitation/assets/js/base/notify.js [32m200[0m 1.192 ms - 2810[0m
+[0mGET / [36m302[0m 0.927 ms - 33[0m
+[0mGET /webui/ [32m200[0m 1.256 ms - 2810[0m
+[0mGET /favicon.ico [32m200[0m 2.399 ms - 2810[0m
+[0mGET / [36m302[0m 0.711 ms - 33[0m
+[0mGET / [36m302[0m 0.589 ms - 33[0m
+[0mGET /invitation [32m200[0m 40.474 ms - 12344[0m
+[0mGET /vpn/index.html [32m200[0m 1.212 ms - 2810[0m
+[0mGET /geoserver/web/ [32m200[0m 1.257 ms - 2810[0m
+[0mGET /config.yml [32m200[0m 1.685 ms - 2810[0m
+[0mGET /cloud-config.yml [32m200[0m 1.712 ms - 2810[0m
+[0mGET /server.key [32m200[0m 1.536 ms - 2810[0m
+[0mGET /.svn/wc.db [32m200[0m 2.659 ms - 2810[0m
+[0mGET /secrets.json [32m200[0m 1.481 ms - 2810[0m
+[0mGET /feed [32m200[0m 1.374 ms - 2810[0m
+[0mGET /server-status [32m200[0m 1.543 ms - 2810[0m
+[0mGET /wp-admin/setup-config.php [32m200[0m 1.513 ms - 2810[0m
+[0mGET /database.sql [32m200[0m 1.454 ms - 2810[0m
+[0mGET /backup.tar.gz [32m200[0m 1.352 ms - 2810[0m
+[0mGET /.ssh/id_ecdsa [32m200[0m 2.830 ms - 2810[0m
+[0mGET /etc/ssl/private/server.key [32m200[0m 1.283 ms - 2810[0m
+[0mGET /backup.zip [32m200[0m 1.698 ms - 2810[0m
+[0mGET /dump.sql [32m200[0m 1.517 ms - 2810[0m
+[0mGET /.env.production [32m200[0m 1.203 ms - 2810[0m
+[0mGET /config.yaml [32m200[0m 4.148 ms - 2810[0m
+[0mGET /.ssh/id_rsa [32m200[0m 2.510 ms - 2810[0m
+[0mGET /etc/shadow [32m200[0m 3.515 ms - 2810[0m
+[0mGET /config.php [32m200[0m 3.270 ms - 2810[0m
+[0mGET /user_secrets.yml [32m200[0m 1.486 ms - 2810[0m
+[0mGET /.aws/credentials [32m200[0m 1.433 ms - 2810[0m
+[0mGET /config/database.php [32m200[0m 1.193 ms - 2810[0m
+[0mGET /.env [32m200[0m 0.665 ms - 2810[0m
+[0mGET / [36m302[0m 2.102 ms - 33[0m
+[0mGET /web.config [32m200[0m 1.048 ms - 2810[0m
+[0mGET /wp-config.php [32m200[0m 2.719 ms - 2810[0m
+[0mGET /.vscode/sftp.json [32m200[0m 2.705 ms - 2810[0m
+[0mGET /phpinfo.php [32m200[0m 3.572 ms - 2810[0m
+[0mGET /.git/HEAD [32m200[0m 2.511 ms - 2810[0m
+[0mGET /.ssh/id_ed25519 [32m200[0m 1.068 ms - 2810[0m
+[0mGET /config.json [32m200[0m 1.038 ms - 2810[0m
+[0mGET /backup.sql [32m200[0m 1.129 ms - 2810[0m
+[0mGET /docker-compose.yml [32m200[0m 1.144 ms - 2810[0m
+[0mGET /api/.env [32m200[0m 0.696 ms - 2810[0m
+[0mGET /.kube/config [32m200[0m 3.637 ms - 2810[0m
+[0mGET /config.xml [32m200[0m 0.911 ms - 2810[0m
+[0mGET /config/production.json [32m200[0m 0.828 ms - 2810[0m
+[0mGET /invitation [32m200[0m 41.638 ms - 12344[0m
+[0mGET /.git/config [32m200[0m 1.524 ms - 2810[0m
+[0mGET / [36m302[0m 0.873 ms - 33[0m
+[0mGET / [36m302[0m 0.616 ms - 33[0m
+[0mGET /invitation [32m200[0m 47.108 ms - 12344[0m
+
+> wedding-invitation@0.0.0 start
+> node ./bin/www | "node_modules/.bin/bunyan"
+
+[2024-07-29T04:51:10.452Z]  INFO: development/21375 on wedding: --------------- INIT TIME-UTIL CLASS ---------------
+[2024-07-29T04:51:10.891Z]  INFO: development/21375 on wedding: ✓ The bundle is now ready for serving!
+[2024-07-29T04:51:10.891Z]  INFO: development/21375 on wedding: Open in inline mode: http://localhost:3001
+[2024-07-29T04:51:11.417Z]  INFO: development/21375 on wedding: Successfully connected to the mongodb database
+[0mGET /invitation [32m200[0m 69.398 ms - 12344[0m
+[0mGET /invitation [32m200[0m 48.073 ms - 12344[0m
+[0mGET /invitation [32m200[0m 43.108 ms - 12344[0m
+[0mGET /invitation [32m200[0m 44.636 ms - 12344[0m
+[0mGET /invitation [32m200[0m 41.561 ms - 12344[0m
+[0mGET /invitation [32m200[0m 43.014 ms - 12344[0m
+[0mGET /invitation [32m200[0m 41.815 ms - 12344[0m
+[0mGET /invitation [32m200[0m 41.961 ms - 12344[0m
+[0mGET /invitation [32m200[0m 43.114 ms - 12344[0m
+[0mGET /invitation [32m200[0m 45.364 ms - 12344[0m
+[0mGET / [36m302[0m 3.000 ms - 66[0m
+[0mGET /invitation [32m200[0m 44.894 ms - 12344[0m
+[0mGET / [36m302[0m 1.150 ms - 66[0m
+[0mGET /invitation [32m200[0m 42.358 ms - 12344[0m
